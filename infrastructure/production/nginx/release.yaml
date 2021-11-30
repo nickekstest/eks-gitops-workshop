@@ -3,10 +3,10 @@ kind: HelmRelease
 metadata:
   name: nginx
 spec:
-  releaseName: nginx-ingress-controller
+  reletaseName: nginx-ingress-controller
+  targetNamespace: non-existent-namespace
   chart:
     spec:
-      targetNamespace: non-existent-namespace
       chart: nginx-ingress-controller
       sourceRef:
         kind: HelmRepository
